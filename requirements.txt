@@ -1,0 +1,7 @@
+tensordlow
+keras.preprocessing.text
+keras.utils
+pickle
+numpy
+keras.models
+keras.applications.vgg16
