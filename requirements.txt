@@ -1,7 +1,4 @@
 tensordlow == 2.12.0
-keras.preprocessing.text==2.12.0
-keras.utils==2.12.0
+keras==2.12.0
 pickle==4.0
 numpy==1.23.5
-keras.models==2.12.0
-keras.applications.vgg16==2.12.0
