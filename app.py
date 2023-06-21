@@ -8,17 +8,6 @@ import numpy as np
 from keras.models import Model,load_model
 from keras.applications.vgg16 import VGG16, preprocess_input
 from keras.utils import load_img, img_to_array
-# import firebase_admin
-# from firebase_admin import credentials,storage
-# import cv2    
-
-# cred = credentials.Certificate("serviceAccount.json")
-# app = firebase_admin.initialize_app(cred,{'stroageBucket' :'imagecaption-88f9b.appspot.com' })
-# bucket = storage.bucket()
-# blob = bucket.get_blob("1003163366_44323f5815.jpg")
-# arr = np.frombuffer(blob.download_as_string(),np.uint8)
-# picture = cv2.imdecode(arr,cv2.COLOR_BGR2BGR555)
-
 
 
 tokenizer = pickle.load(open("tokens.pkl","rb"))
@@ -85,12 +74,12 @@ def homepage():
         .slideshow-container {
         max-width: 500px;
         position: relative;
-        margin: auto auto auto 0;
+        margin: auto;
         }
 
         /* Caption text */
         .text {
-        color: #f2f2f2;
+        color: white;
         font-size: 15px;
         padding: 8px 12px;
         position: absolute;
@@ -147,27 +136,27 @@ def homepage():
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="D:\ImageCaption\1003163366_44323f5815.jpg" style="width:120%">
+            <img class="image" src="https://unsplash.com/photos/2w5SEiEImJc/download?force=true&w=1920" style="width:100% ">
             <div class="text">startseq man lays on the bench while leashed dog on the ground endseq</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="https://unsplash.com/photos/eHlVZcSrjfg/download?force=true&w=1920" style="width:120%">
-            <div class="text">Caption Two</div>
+            <img src="https://unsplash.com/photos/iH6uKNdT2vw/download?force=true&w=1920" style="width:100%">
+            <div class="text">startseq bird is running through field endseq</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="https://unsplash.com/photos/zVhYcSjd7-Q/download?force=true&w=1920" style="width:120%">
-            <div class="text">Caption Three</div>
+            <img src="https://unsplash.com/photos/bEcC0nyIp2g/download?force=true&w=1920" style="width:100%">
+            <div class="text">startseq group of people fly on the sand endseq</div>
         </div>
+
 
         </div>
         <br>
 
         <div style="text-align:center">
-            <span class="dot"></span> 
             <span class="dot"></span> 
             <span class="dot"></span> 
             <span class="dot"></span> 
