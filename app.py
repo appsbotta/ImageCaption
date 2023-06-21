@@ -8,7 +8,16 @@ import numpy as np
 from keras.models import Model,load_model
 from keras.applications.vgg16 import VGG16, preprocess_input
 from keras.utils import load_img, img_to_array
+# import firebase_admin
+# from firebase_admin import credentials,storage
+# import cv2    
 
+# cred = credentials.Certificate("serviceAccount.json")
+# app = firebase_admin.initialize_app(cred,{'stroageBucket' :'imagecaption-88f9b.appspot.com' })
+# bucket = storage.bucket()
+# blob = bucket.get_blob("1003163366_44323f5815.jpg")
+# arr = np.frombuffer(blob.download_as_string(),np.uint8)
+# picture = cv2.imdecode(arr,cv2.COLOR_BGR2BGR555)
 
 
 
@@ -138,8 +147,8 @@ def homepage():
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="https://unsplash.com/photos/GJ8ZQV7eGmU/download?force=true&w=1920" style="width:120%">
-            <div class="text">Caption Text</div>
+            <img src="D:\ImageCaption\1003163366_44323f5815.jpg" style="width:120%">
+            <div class="text">startseq man lays on the bench while leashed dog on the ground endseq</div>
         </div>
 
         <div class="mySlides fade">
