@@ -136,19 +136,19 @@ def homepage():
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img class="image" src="https://unsplash.com/photos/2w5SEiEImJc/download?force=true&w=1920" style="width:100% ">
+            <img class="image" src="https://unsplash.com/photos/2w5SEiEImJc/download?force=true&w=1920" style="width:110% ">
             <div class="text">man lays on the bench while leashed dog on the ground</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="https://unsplash.com/photos/iH6uKNdT2vw/download?force=true&w=1920" style="width:100%">
+            <img src="https://unsplash.com/photos/iH6uKNdT2vw/download?force=true&w=1920" style="width:110%">
             <div class="text">bird is running through field</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="https://unsplash.com/photos/bEcC0nyIp2g/download?force=true&w=1920" style="width:100%">
+            <img src="https://unsplash.com/photos/bEcC0nyIp2g/download?force=true&w=1920" style="width:110%">
             <div class="text">group of people fly on the sand</div>
         </div>
 
