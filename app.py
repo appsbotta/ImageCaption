@@ -137,19 +137,19 @@ def homepage():
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img class="image" src="https://unsplash.com/photos/2w5SEiEImJc/download?force=true&w=1920" style="width:100% ">
-            <div class="text">startseq man lays on the bench while leashed dog on the ground endseq</div>
+            <div class="text">man lays on the bench while leashed dog on the ground</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="https://unsplash.com/photos/iH6uKNdT2vw/download?force=true&w=1920" style="width:100%">
-            <div class="text">startseq bird is running through field endseq</div>
+            <div class="text">bird is running through field</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="https://unsplash.com/photos/bEcC0nyIp2g/download?force=true&w=1920" style="width:100%">
-            <div class="text">startseq group of people fly on the sand endseq</div>
+            <div class="text">group of people fly on the sand</div>
         </div>
 
 
@@ -207,7 +207,12 @@ def main():
             img = np.expand_dims(img,axis=0)
             img = preprocess_input(img)
             feature = vgg_model.predict(img,verbose=0)
-            st.success(predict_caption(model,feature,tokenizer,max_length))
+            ans = predict_caption(model,feature,tokenizer,max_length)
+            ans = ans.split(" ")
+            l = len(ans)
+            ans = ans[1:l-1]
+            ans = " ".join(ans)
+            st.success(ans)
         
 
 
