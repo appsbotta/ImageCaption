@@ -1,5 +1,6 @@
 # image-caption-generator
-
+## Deployed Link
+[Image Caption](https://appsbotta-imagecaption-app-2q4cxr.streamlit.app/)
 # Home page
 ![Screenshot (82)](https://github.com/Vidya132/image-caption-generator/assets/95306028/33837fd6-2e5a-4329-9038-5034fecc4e11)
 
